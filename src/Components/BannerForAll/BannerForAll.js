@@ -1,10 +1,14 @@
 import React from 'react';
-import NavbarCom
-const BannerForAll = () => {
+import NavbarCom from '../../Components/Navbar/Navbar';
+import './BannerForAll.css'
+
+const BannerForAll = ({page}) => {
     return (
         <div>
              <NavbarCom />
-           <h2>Class</h2>
+             <div className="bannerForAll-container">
+                <h2>{page}</h2>
+             </div>
         </div>
     );
 };
