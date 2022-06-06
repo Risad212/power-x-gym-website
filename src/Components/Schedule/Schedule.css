@@ -1,0 +1,40 @@
+.scheduleContainer .scheduleLeft ul{
+    padding: 0;
+}
+.scheduleContainer .scheduleLeft p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    margin-top: 1.5rem;
+}
+.scheduleContainer .scheduleLeft ul li{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.scheduleContainer .scheduleLeft ul li svg{
+    background: #fcd842;
+    color: #fff;
+    border: none;
+}
+
+/*-- schedule right ---- */
+.scheduleContainer .scheduleRight h2{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: #fcd842;
+}
+.schedule-card {
+    padding: 0.9rem 1.2rem;
+    box-shadow: 5px 5px 5px 5px rgb(238, 238, 238);
+}
+
+.scheduleContainer button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

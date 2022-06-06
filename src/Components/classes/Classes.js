@@ -19,19 +19,19 @@ const Classes = () => {
         },
         {
             img: çlassImgeTow,
-            title: 'phyco training'
+            title: 'self defense'
         },
         {
             img: çlassImgeThree,
-            title: 'phyco training'
+            title: 'advanced gym'
         },
         {
             img: çlassImgeFour,
-            title: 'phyco training'
+            title: 'cardio training'
         },
         {
             img: çlassImgeFive,
-            title: 'phyco training'
+            title: 'strength training'
         },
         {
             img: çlassImgeSix,

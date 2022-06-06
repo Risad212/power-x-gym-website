@@ -26,7 +26,7 @@ const NavbarCom = () => {
                         <Nav className="ms-auto py-4">
                             <Link to="/home" style={{color: navstyle? '#000': '#fff'}}>Home</Link>
                             <Link to="/services" style={{color: navstyle? '#000': '#fff'}}>services</Link>
-                            <Link to="/clases" style={{color: navstyle? '#000': '#fff'}}>our classes</Link>
+                            <Link to="/class" style={{color: navstyle? '#000': '#fff'}}>our classes</Link>
                             <Link to="/about" style={{color: navstyle? '#000': '#fff'}}>about us</Link>
                             <Link to="/blog" style={{color: navstyle? '#000': '#fff'}}>blog</Link>
                             <Link to="/price" style={{color: navstyle? '#000': '#fff'}}>pricing</Link>
