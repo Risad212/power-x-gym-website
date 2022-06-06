@@ -1,0 +1,25 @@
+.training-container .innerBox {
+    background: #ffdb42;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.training-container .innerBox h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Oswald', "sans-serif";
+    text-transform: uppercase;
+}
+.training-container .innerBox svg{
+   font-size: 1.5rem;
+}
+.training-container #training{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+}
+.training-container .innerBox{
+    position: absolute;
+    bottom: 3rem;
+}

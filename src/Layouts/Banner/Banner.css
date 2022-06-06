@@ -1,0 +1,126 @@
+.banner-container{
+    background-image: linear-gradient(to bottom, rgb(47, 47, 47), rgba(45, 45, 45, 0.5)),url(../../Media/banner.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-container .banner-content h2{
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.banner-container .banner-content p{
+    color: #fff;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+.banner-container .banner-content button{
+    padding: .5rem  3rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #ffdb42;
+    margin-top: 1rem;
+    background: #ffdb42;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.banner-container .banner-content button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.banner-container .banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 999;
+}
+.banner-container .banner-button::after{
+    content: '';
+    background: rgb(121, 121, 121);
+    position: absolute;
+    padding: 20rem 7rem;
+    opacity: .3;
+    transform: rotate(45deg);
+}
+.banner-container .banner-button::before{
+    content: '';
+    background: rgb(121, 121, 121);
+    position: absolute;
+    padding: 20rem 7rem;
+    opacity: .3;
+    transform: rotate(-45deg);
+}
+.banner-container .banner-button span{
+    color: #fff;
+    font-size: 2.2rem;
+    background: rgb(121, 121, 121);
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .banner-container .banner-content h2{
+        font-size: 3rem;
+    }
+    .banner-container .banner-button::after
+    ,.banner-container .banner-button::before{
+        background: none;
+        padding: none;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .banner-container .banner-content h2{
+        font-size: 2.5rem;
+    }
+    .banner-container .banner-button{
+        padding-top: 3rem;
+    }
+    .banner-container .banner-button span{
+        width: 5rem;
+        height: 5rem;
+        font-size: 1.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .banner-container{
+        text-align: center;
+    }
+    .banner-container .banner-content h2{
+        font-size: 2rem;
+    }
+    .banner-container .banner-button span{
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    .banner-container .banner-button::after
+    ,.banner-container .banner-button::before{
+        background: none;
+        padding: 0;
+    }
+}
+
+

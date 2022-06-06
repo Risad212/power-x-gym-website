@@ -1,0 +1,27 @@
+footer{
+    background: #171426;
+    padding: 4rem 0;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+footer .footer-logo h3{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer .social-link ul li{
+    margin: 1rem 0;
+}
+footer ul{
+    padding: 0;
+}
+footer .social-icon li{
+    margin-right: .8rem;
+}
+footer .social-icon ul li svg{
+    font-size: 1.2rem;
+}
+footer p{
+    font-size: 1rem;
+}

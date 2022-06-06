@@ -1,0 +1,30 @@
+.service-container .single-service{
+    padding: 6rem 0;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+.service-container .single-service div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.service-container .single-service img{
+    width: 12%;
+}
+
+.service-container .single-service h3{
+    margin: 1.2rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.service-container .single-service:nth-child(2) h3{
+    color: #000;
+}

@@ -1,0 +1,31 @@
+.choose-container h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffdb42;
+    font-family: Oswald, "sans-serif";
+}
+.choose-card {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgb(250, 247, 247);
+}
+.choose-container .choose-card img{
+    width: 20%;
+    margin: 1rem 0;
+}
+.choose-card h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    font-family: Oswald, "sans-serif";
+}
+.choose-card p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    font-family: 'Roboto', sans-serif;
+}
