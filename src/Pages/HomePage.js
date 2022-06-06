@@ -12,7 +12,7 @@ const HomePage = () => {
     return (
         <div>
             <NavbarCom />
-            <Banner />
+            <Banner page="home"/>
             <Service />
             <About />
             <Trainin />
