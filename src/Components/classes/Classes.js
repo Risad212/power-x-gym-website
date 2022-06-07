@@ -9,7 +9,7 @@ import çlassImgeThree from '../../Media/class3.jpg';
 import çlassImgeFour from '../../Media/class4.jpg';
 import çlassImgeFive from '../../Media/class5.jpg';
 import çlassImgeSix from '../../Media/class6.jpg';
-
+import { useNavigate } from 'react-router-dom';
 
 const Classes = () => {
     const classObject = [
@@ -38,6 +38,7 @@ const Classes = () => {
             title: 'phyco training'
         },
     ]
+    const navigate = useNavigate()
     return (
         <div className='class-container'>
             <Container>
@@ -50,7 +51,7 @@ const Classes = () => {
                                         <Col lg="4" style={{marginBottom: '5rem'}}>
                                             <div id="cardClass">
                                                 <img src={element?.img} alt=""/>
-                                                <div className='classInnerBox'>
+                                                <div className='classInnerBox' onClick={() => navigate('/schedule')}>
                                                     <h3 className='d-inline me-3'>{element?.title}</h3><FontAwesomeIcon icon={faArrowRight} />
                                                 </div>
                                             </div>

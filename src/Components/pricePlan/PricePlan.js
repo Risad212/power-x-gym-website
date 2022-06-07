@@ -6,6 +6,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import priceOne from '../../Media/service1.jpg';
 import priceTow from '../../Media/service2.jpg';
 import priceThree from '../../Media/service3.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const PricePlan = () => {
     const priceData = [
@@ -25,6 +26,8 @@ const PricePlan = () => {
             bgImage: priceThree,
         },
     ]
+
+    const navigate = useNavigate()
     return (
         <div className='pricePlanContainer py-5'>
             <Container>
@@ -51,7 +54,7 @@ const PricePlan = () => {
                                                         <li><FontAwesomeIcon icon={faCheck} className="me-2" />outstanding</li>
                                                         <li><FontAwesomeIcon icon={faCheck} className="me-2" />happy customer</li>
                                                     </ul>
-                                                    <button>purchase</button>
+                                                    <button onClick={() => navigate('/membership')}>purchase</button>
                                                 </div>
                                             </div>
                                         </Col>

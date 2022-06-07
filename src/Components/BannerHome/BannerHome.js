@@ -1,11 +1,12 @@
 import React from 'react';
 import './BannerHome.css';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const BannerHome = () => {
+    const navigate = useNavigate()
     return (
         <div className='banner-container'>
             <Container>
@@ -16,7 +17,7 @@ const BannerHome = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Suscipit quae repellendus et accusamus. Suscipit amet sunt atque,
                                 velit, facere natus a repellendus saepe ipsum magni veritatis impedit esse</p>
-                            <button><Link to='/'>join us</Link></button>
+                            <button onClick={() => navigate('/price')}><Link to='/'>join us</Link></button>
                         </div>
                     </Col>
                     <Col lg={6} md="auto">
