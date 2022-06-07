@@ -6,9 +6,9 @@
 }
 .pricePlanContainer .priceHead p{
     font-size: 1rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-weight: 500;
-    padding: 0 28rem;
+    padding: 0 22rem;
     line-height: 1.8;
     font-family: 'Roboto', sans-serif;
 }
@@ -58,4 +58,41 @@
     background: rgb(255, 219, 66);
     border: 2px solid rgb(255, 219, 66);
     font-family: 'Oswald', sans-serif;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .pricePlanContainer .priceHead p{
+        padding: 0 15rem;
+    }
+    .priceCard ul{
+        margin-left: 3rem;
+    }
+    .pricePlanContainer .priceCard{
+        padding: 6rem 0rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pricePlanContainer .priceHead h2{
+        font-size: 1.8rem;
+    }
+    .pricePlanContainer .priceHead p{
+        padding: 0 5rem;
+    }
+    .priceCard ul{
+        margin-left: 6rem;
+    }
+    .pricePlanContainer .priceCard{
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pricePlanContainer .priceHead p{
+        padding: 0 2rem;
+    }
+    .priceCard ul{
+        margin-left: 12rem;
+    }
 }

@@ -1,0 +1,19 @@
+.memberShitTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.memberShitTitle h2:nth-child(odd){
+    background: #777;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50%;
+    color: #fff;
+}
+.memberShitTitle p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.memberShitTitle p:nth-child(even){
+    color: #fff;
+}
