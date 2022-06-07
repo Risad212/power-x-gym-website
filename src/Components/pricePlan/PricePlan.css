@@ -1,0 +1,51 @@
+.pricePlanContainer .priceHead h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(255, 219, 66);
+    font-family: 'Oswald', sans-serif;
+}
+.pricePlanContainer .priceHead p{
+    font-size: .8rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    padding: 0 28rem;
+    line-height: 1.8;
+}
+.pricePlanContainer .priceCard{
+    color: #fff;
+    text-align: center;
+    height: 38rem;
+    padding: 6rem 3rem;
+}
+.priceCard ul{
+    padding: 0;
+    text-align: justify;
+    margin: 2rem 0;
+    margin-left: 6rem;
+}
+.priceCard ul li{
+    margin: 1rem 0;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: rgb(230, 229, 229);
+    font-weight: 500;
+}
+.priceCard span{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 219, 66);
+}
+.priceCard h2{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+.priceCard h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 219, 66);
+    margin: 1rem 0;
+}

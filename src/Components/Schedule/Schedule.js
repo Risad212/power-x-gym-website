@@ -4,6 +4,7 @@ import './Schedule.css';
 import ScheduleBanner from '../../Media/class3.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-regular-svg-icons';
+import JoinButton from '../JoinButton/JoinButton';
 const Schedule = () => {
     const timeData = [
         {
@@ -77,11 +78,12 @@ const Schedule = () => {
                                         ''
                                 }
                             </Row>
+                            {/* join us button */}
+                           <JoinButton />
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <button>Join Us</button>
         </div>
     );
 };
