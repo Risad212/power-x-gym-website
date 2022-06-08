@@ -44,10 +44,12 @@ const CheckOutForm = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <div className='CardNumber py-3'>
+                        <div className='CardNumber py-3 mt-5'>
+                            <Container>
                             <Col lg="12">
                                 <CardElement />
                             </Col>
+                            </Container>
                         </div>
                     </Row>
                 </div>
