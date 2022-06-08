@@ -1,26 +1,19 @@
-import { Elements, PaymentElement } from '@stripe/react-stripe-js';
+import {Elements} from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
+import CheckOutForm from '../CheckOutForm/CheckOutForm';
 
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLIC_KEY)
+const stripePromise = loadStripe("pk_test_51KchMQHOoLp8HmpyJaiWowfpzFuDwabyl2x0Yhv9ihG8cnDwF6I9xwPbc1d1pUAa3TliVZyce7sNMdlfVFIrpF4d00jKvpRO85")
 
-console.log(process.env.STRIPE_CLIENT_KEY)
 const PaymentCard = () => {
-    // const options = {
-    //     // passing the client secret obtained from the server
-    //     clientSecret: {},
-    //   };
     return (
         <div>
             <Container>
-                {/* <Elements stripe={stripePromise} options={options}>
-                    <form>
-                        <PaymentElement />
-                        <button>Submit</button>
-                    </form>
-                </Elements> */}
+                <Elements stripe={stripePromise}>
+                    <CheckOutForm />
+                </Elements>
             </Container>
         </div>
     );
@@ -28,6 +21,3 @@ const PaymentCard = () => {
 
 export default PaymentCard;
 
-
-
-// pk_test_51KchMQHOoLp8HmpyJaiWowfpzFuDwabyl2x0Yhv9ihG8cnDwF6I9xwPbc1d1pUAa3TliVZyce7sNMdlfVFIrpF4d00jKvpRO85
