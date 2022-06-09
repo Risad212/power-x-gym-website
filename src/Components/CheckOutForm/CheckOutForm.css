@@ -20,3 +20,13 @@
     font-weight: 500;
     color: #777;
 }
+.NextButton{
+    padding: 0.5rem 3rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: 1px solid #ffdb42;
+    margin-top: 1rem;
+    background: #ffdb42;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}

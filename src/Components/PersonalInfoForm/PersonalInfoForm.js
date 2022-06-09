@@ -1,9 +1,11 @@
 import React from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './PersonalInfoForm.css';
 
 
 const PersonalInfoForm = () => {
+    const navigate = useNavigate()
     return (
         <div className='personalInfoFormContainer'>
             <Container>
@@ -76,7 +78,7 @@ const PersonalInfoForm = () => {
                         </Col>
                     </Row>
                 </Form>
-               <button className='d-block ms-auto'>Next</button>
+               <button className='d-block ms-auto' onClick={() => navigate('/payment')}>Next</button>
             </Container>
         </div>
     );
