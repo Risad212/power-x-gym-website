@@ -7,8 +7,16 @@
     margin-right: 1rem;
 }
 .CardNumber{
-    background: #ddd;
+    border: 1px solid #ddd;
 }
-.CardNumber input{
-    font-size: 1.2rem;
+.cardInfo input{
+    margin-top: 0.4rem;
+    margin-right: 1rem;
+    width: 100%;
+    padding: 1rem .8rem;
+}
+.cardInfo label{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
 }

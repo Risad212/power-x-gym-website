@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import { CardElement, useStripe, useElements, ElementsConsumer, PaymentElement } from '@stripe/react-stripe-js';
 import './CheckOutForm.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import AmexCardImage from '../../Media/credit-cards_amex.png';
@@ -37,7 +37,7 @@ const CheckOutForm = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg="4">
+                        <Col lg="4" className='text-right'>
                             <img src={AmexCardImage} className="me-2" alt="" />
                             <img src={MasterCardImage} className="me-2" alt="" />
                             <img src={VisaCardImage} className="me-2" alt="" />
@@ -46,11 +46,25 @@ const CheckOutForm = () => {
                     <Row>
                         <div className='CardNumber py-3 mt-5'>
                             <Container>
-                            <Col lg="12">
-                                <CardElement />
-                            </Col>
+                                <Col lg="12">
+                                    <CardElement />
+                                </Col>
                             </Container>
                         </div>
+                    </Row>
+                    <Row className='mt-5 cardInfo'>
+                        <Col lg="6">
+                            <label class="form-label d-block">NAME ON CARD</label>
+                            <input type="number" placeholder='' />
+                        </Col>
+                        <Col lg="3">
+                            <label class="form-label d-block">EXPIRY DATE</label>
+                            <input type="date" />
+                        </Col>
+                        <Col lg="3">
+                            <label class="form-label d-block">CVV CODE</label>
+                            <input type="number" placeholder='' />
+                        </Col>
                     </Row>
                 </div>
                 <div className='border p-5'>
